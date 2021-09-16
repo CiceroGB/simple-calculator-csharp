@@ -28,6 +28,7 @@ namespace Calculator
             Console.WriteLine("\ts - Subtract");
             Console.WriteLine("\tm - Multiply");
             Console.WriteLine("\td - Divide");
+            Console.WriteLine("\tx - Exit");
             Console.Write("Your option? ");
 
             switch (Console.ReadLine())
@@ -43,6 +44,9 @@ namespace Calculator
                     break;
                 case "d":
                     Console.WriteLine($"Your result: {v1} / {v2} = " + (v1 / v2));
+                    break;
+                case "x":
+                    System.Environment.Exit(0);
                     break;
                 default: Menu(); break;
             }
